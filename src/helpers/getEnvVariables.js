@@ -1,10 +1,7 @@
 
-
 export const getEnvVariables = () => {
-
-  import.meta.env;
-
+  const { REACT_APP_API_URL } = process.env;
   return {
-    ...import.meta.env
-  }
-}
+    REACT_APP_API_URL
+  };
+};
